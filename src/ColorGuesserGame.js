@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/style.css"
+import "./styles/style.css";
 import colors from "./utils/colors";
 
 function ColorGuesserGame() {
@@ -52,7 +52,7 @@ function ColorGuesserGame() {
             border: "none",
           }}
         ></div>
-        <h2 data-testid="gameInstructions" className={status}>
+        <h2 data-testid="gameInstructions" className="instruction">
           {instruction}
         </h2>
         <div className="options">
@@ -80,13 +80,15 @@ function ColorGuesserGame() {
         <p id="score" data-testid="score">
           Score: {score}
         </p>
-        <button
-          className="new-game-button"
-          data-testid="newGameButton"
-          onClick={resetGame}
-        >
-          New Game
-        </button>
+        <div className="new-game-container">
+          <button
+            className="new-game-button"
+            data-testid="newGameButton"
+            onClick={resetGame}
+          >
+            New Game
+          </button>
+        </div>
       </div>
     </div>
   );
