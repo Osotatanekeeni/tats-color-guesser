@@ -46,8 +46,8 @@ function ColorGuesserGame() {
           data-testid="colorBox"
           style={{
             backgroundColor: gameData.target,
-            width: "7em",
-            height: "3em",
+            width: "6em",
+            height: "6em",
             borderRadius: 15,
             border: "none",
           }}
@@ -65,8 +65,8 @@ function ColorGuesserGame() {
                 data-testid="colorOption"
                 style={{
                   backgroundColor: color,
-                  width: "7em",
-                  height: "3em",
+                  width: "6em",
+                  height: "6em",
                   borderRadius: 15,
                   border: "none",
                 }}
