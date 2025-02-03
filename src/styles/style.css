@@ -76,10 +76,12 @@ body {
 .status.correct {
   animation: pop 0.5s ease-in-out;
   font-size: 1.6em;
+  text-align: center;
 }
 
 .status.wrong {
   animation: shake 0.5s ease-in-out;
+  text-align: center;
 }
 
 .options {
