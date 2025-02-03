@@ -1,171 +1,175 @@
 const colors = [
   {
-    target: "#2ECC71",
-    choices: ["#58D68D", "#26A65B", "#229954", "#82E0AA", "#1E8449"],
+    target: "#FF0000", // Red
+    choices: ["#00FF00", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"],
   },
   {
-    target: "#3498DB",
-    choices: ["#5DADE2", "#2A80B9", "#2471A3", "#85C1E9", "#1F618D"],
+    target: "#00FF00", // Green
+    choices: ["#FF0000", "#0000FF", "#FFFF00", "#FF00FF", "#00FFFF"],
   },
   {
-    target: "#E67E22",
-    choices: ["#F39C12", "#D35400", "#BA4A00", "#F5B041", "#8F3B00"],
+    target: "#0000FF", // Blue
+    choices: ["#FF0000", "#00FF00", "#FFFF00", "#FF00FF", "#00FFFF"], 
   },
   {
-    target: "#FF33A1",
-    choices: ["#FF66B2", "#E02B8F", "#D12982", "#FF80C4", "#B8246E"],
+    target: "#FFFF00", // Yellow
+    choices: ["#FF0000", "#00FF00", "#0000FF", "#FF00FF", "#00FFFF"],
   },
   {
-    target: "#33FFA1",
-    choices: ["#66FFB2", "#2BE08F", "#29D182", "#80FFC4", "#24B86E"],
+    target: "#FF00FF", // Magenta
+    choices: ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#00FFFF"],
   },
   {
-    target: "#A133FF",
-    choices: ["#B266FF", "#8F2BE0", "#8229D1", "#C480FF", "#6E24B8"],
+    target: "#00FFFF", // Cyan
+    choices: ["#FF0000", "#00FF00", "#0000FF", "#FFFF00", "#FF00FF"],
   },
   {
-    target: "#FF5733",
-    choices: ["#FF8D72", "#E04B2B", "#D14429", "#FF9A85", "#B83A24"],
+    target: "#800000", // Maroon
+    choices: ["#008000", "#000080", "#808000", "#800080", "#008080"],
   },
   {
-    target: "#C70039",
-    choices: ["#E02B5A", "#B80033", "#A6002E", "#FF4D6F", "#8F0026"],
+    target: "#008000", // Green
+    choices: ["#800000", "#000080", "#808000", "#800080", "#008080"],
   },
   {
-    target: "#900C3F",
-    choices: ["#B8004D", "#820035", "#73002F", "#D1005E", "#5E0022"],
+    target: "#000080", // Navy
+    choices: ["#800000", "#008000", "#808000", "#800080", "#008080"],
   },
   {
-    target: "#581845",
-    choices: ["#7A0030", "#4A0028", "#3D0021", "#9E004A", "#2F0019"],
+    target: "#808000", // Olive
+    choices: ["#800000", "#008000", "#000080", "#800080", "#008080"],
   },
   {
-    target: "#FFC300",
-    choices: ["#FFD700", "#E6B800", "#CC9E00", "#FFEB3B", "#B38F00"],
+    target: "#800080", // Purple
+    choices: ["#800000", "#008000", "#000080", "#808000", "#008080"],
   },
   {
-    target: "#DAF7A6",
-    choices: ["#E6FFB3", "#CCE699", "#B3CC80", "#FFFFCC", "#99B366"],
+    target: "#008080", // Teal
+    choices: ["#800000", "#008000", "#000080", "#808000", "#800080"],
   },
   {
-    target: "#FF5733",
-    choices: ["#FF8D72", "#E04B2B", "#D14429", "#FF9A85", "#B83A24"],
+    target: "#FFA500", // Orange
+    choices: ["#800080", "#008080", "#000080", "#008000", "#800000"],
   },
   {
-    target: "#C70039",
-    choices: ["#E02B5A", "#B80033", "#A6002E", "#FF4D6F", "#8F0026"],
+    target: "#A52A2A", // Brown
+    choices: ["#5F9EA0", "#D2691E", "#FF7F50", "#6495ED", "#DC143C"],
   },
   {
-    target: "#900C3F",
-    choices: ["#B8004D", "#820035", "#73002F", "#D1005E", "#5E0022"],
+    target: "#5F9EA0", // CadetBlue
+    choices: ["#A52A2A", "#D2691E", "#FF7F50", "#6495ED", "#DC143C"],
   },
   {
-    target: "#581845",
-    choices: ["#7A0030", "#4A0028", "#3D0021", "#9E004A", "#2F0019"],
+    target: "#D2691E", // Chocolate
+    choices: ["#A52A2A", "#5F9EA0", "#FF7F50", "#6495ED", "#DC143C"],
   },
   {
-    target: "#FFC300",
-    choices: ["#FFD700", "#E6B800", "#CC9E00", "#FFEB3B", "#B38F00"],
+    target: "#FF7F50", // Coral
+    choices: ["#A52A2A", "#5F9EA0", "#D2691E", "#6495ED", "#DC143C"],
   },
   {
-    target: "#DAF7A6",
-    choices: ["#E6FFB3", "#CCE699", "#B3CC80", "#FFFFCC", "#99B366"],
+    target: "#6495ED", // CornflowerBlue
+    choices: ["#A52A2A", "#5F9EA0", "#D2691E", "#FF7F50", "#DC143C"],
   },
   {
-    target: "#FF5733",
-    choices: ["#FF8D72", "#E04B2B", "#D14429", "#FF9A85", "#B83A24"],
+    target: "#DC143C", // Crimson
+    choices: ["#A52A2A", "#5F9EA0", "#D2691E", "#FF7F50", "#6495ED"],
   },
   {
-    target: "#C70039",
-    choices: ["#E02B5A", "#B80033", "#A6002E", "#FF4D6F", "#8F0026"],
+    target: "#00CED1", // DarkTurquoise
+    choices: ["#FFD700", "#ADFF2F", "#FF69B4", "#CD5C5C", "#4B0082"],
   },
   {
-    target: "#900C3F",
-    choices: ["#B8004D", "#820035", "#73002F", "#D1005E", "#5E0022"],
+    target: "#FFD700", // Gold
+    choices: ["#00CED1", "#ADFF2F", "#FF69B4", "#CD5C5C", "#4B0082"],
   },
   {
-    target: "#581845",
-    choices: ["#7A0030", "#4A0028", "#3D0021", "#9E004A", "#2F0019"],
+    target: "#ADFF2F", // GreenYellow
+    choices: ["#00CED1", "#FFD700", "#FF69B4", "#CD5C5C", "#4B0082"],
   },
   {
-    target: "#FFC300",
-    choices: ["#FFD700", "#E6B800", "#CC9E00", "#FFEB3B", "#B38F00"],
+    target: "#FF69B4", // HotPink
+    choices: ["#00CED1", "#FFD700", "#ADFF2F", "#CD5C5C", "#4B0082"],
   },
   {
-    target: "#DAF7A6",
-    choices: ["#E6FFB3", "#CCE699", "#B3CC80", "#FFFFCC", "#99B366"],
+    target: "#CD5C5C", // IndianRed
+    choices: ["#00CED1", "#FFD700", "#ADFF2F", "#FF69B4", "#4B0082"],
   },
   {
-    target: "#FF5733",
-    choices: ["#FF8D72", "#E04B2B", "#D14429", "#FF9A85", "#B83A24"],
+    target: "#4B0082", // Indigo
+    choices: ["#00CED1", "#FFD700", "#ADFF2F", "#FF69B4", "#CD5C5C"],
   },
   {
-    target: "#C70039",
-    choices: ["#E02B5A", "#B80033", "#A6002E", "#FF4D6F", "#8F0026"],
+    target: "#F0E68C", // Khaki
+    choices: ["#8B4513", "#2E8B57", "#6A5ACD", "#708090", "#FF6347"],
   },
   {
-    target: "#900C3F",
-    choices: ["#B8004D", "#820035", "#73002F", "#D1005E", "#5E0022"],
+    target: "#8B4513", // SaddleBrown
+    choices: ["#F0E68C", "#2E8B57", "#6A5ACD", "#708090", "#FF6347"],
   },
   {
-    target: "#581845",
-    choices: ["#7A0030", "#4A0028", "#3D0021", "#9E004A", "#2F0019"],
+    target: "#2E8B57", // SeaGreen
+    choices: ["#F0E68C", "#8B4513", "#6A5ACD", "#708090", "#FF6347"],
   },
   {
-    target: "#FFC300",
-    choices: ["#FFD700", "#E6B800", "#CC9E00", "#FFEB3B", "#B38F00"],
+    target: "#6A5ACD", // SlateBlue
+    choices: ["#F0E68C", "#8B4513", "#2E8B57", "#708090", "#FF6347"],
   },
   {
-    target: "#DAF7A6",
-    choices: ["#E6FFB3", "#CCE699", "#B3CC80", "#FFFFCC", "#99B366"],
+    target: "#708090", // SlateGray
+    choices: ["#F0E68C", "#8B4513", "#2E8B57", "#6A5ACD", "#FF6347"],
   },
   {
-    target: "#FF5733",
-    choices: ["#FF8D72", "#E04B2B", "#D14429", "#FF9A85", "#B83A24"],
+    target: "#FF6347", // Tomato
+    choices: ["#F0E68C", "#8B4513", "#2E8B57", "#6A5ACD", "#708090"],
   },
   {
-    target: "#C70039",
-    choices: ["#E02B5A", "#B80033", "#A6002E", "#FF4D6F", "#8F0026"],
+    target: "#4682B4", // SteelBlue
+    choices: ["#D2B48C", "#D8BFD8", "#FF6347", "#40E0D0", "#EE82EE"],
   },
   {
-    target: "#900C3F",
-    choices: ["#B8004D", "#820035", "#73002F", "#D1005E", "#5E0022"],
+    target: "#D2B48C", // Tan
+    choices: ["#4682B4", "#D8BFD8", "#FF6347", "#40E0D0", "#EE82EE"],
   },
   {
-    target: "#581845",
-    choices: ["#7A0030", "#4A0028", "#3D0021", "#9E004A", "#2F0019"],
+    target: "#D8BFD8", // Thistle
+    choices: ["#4682B4", "#D2B48C", "#FF6347", "#40E0D0", "#EE82EE"],
   },
   {
-    target: "#FFC300",
-    choices: ["#FFD700", "#E6B800", "#CC9E00", "#FFEB3B", "#B38F00"],
+    target: "#FF6347", // Tomato
+    choices: ["#4682B4", "#D2B48C", "#D8BFD8", "#40E0D0", "#EE82EE"],
   },
   {
-    target: "#DAF7A6",
-    choices: ["#E6FFB3", "#CCE699", "#B3CC80", "#FFFFCC", "#99B366"],
+    target: "#40E0D0", // Turquoise
+    choices: ["#4682B4", "#D2B48C", "#D8BFD8", "#FF6347", "#EE82EE"],
   },
   {
-    target: "#FF5733",
-    choices: ["#FF8D72", "#E04B2B", "#D14429", "#FF9A85", "#B83A24"],
+    target: "#EE82EE", // Violet
+    choices: ["#4682B4", "#D2B48C", "#D8BFD8", "#FF6347", "#40E0D0"],
   },
   {
-    target: "#C70039",
-    choices: ["#E02B5A", "#B80033", "#A6002E", "#FF4D6F", "#8F0026"],
+    target: "#F5DEB3", // Wheat
+    choices: ["#9ACD32", "#8A2BE2", "#A52A2A", "#DEB887", "#5F9EA0"],
   },
   {
-    target: "#900C3F",
-    choices: ["#B8004D", "#820035", "#73002F", "#D1005E", "#5E0022"],
+    target: "#9ACD32", // YellowGreen
+    choices: ["#F5DEB3", "#8A2BE2", "#A52A2A", "#DEB887", "#5F9EA0"],
   },
   {
-    target: "#581845",
-    choices: ["#7A0030", "#4A0028", "#3D0021", "#9E004A", "#2F0019"],
+    target: "#8A2BE2", // BlueViolet
+    choices: ["#F5DEB3", "#9ACD32", "#A52A2A", "#DEB887", "#5F9EA0"],
   },
   {
-    target: "#FFC300",
-    choices: ["#FFD700", "#E6B800", "#CC9E00", "#FFEB3B", "#B38F00"],
+    target: "#A52A2A", // Brown
+    choices: ["#F5DEB3", "#9ACD32", "#8A2BE2", "#DEB887", "#5F9EA0"],
   },
   {
-    target: "#DAF7A6",
-    choices: ["#E6FFB3", "#CCE699", "#B3CC80", "#FFFFCC", "#99B366"],
+    target: "#DEB887", // BurlyWood
+    choices: ["#F5DEB3", "#9ACD32", "#8A2BE2", "#A52A2A", "#5F9EA0"],
+  },
+  {
+    target: "#5F9EA0", // CadetBlue
+    choices: ["#F5DEB3", "#9ACD32", "#8A2BE2", "#A52A2A", "#DEB887"],
   },
 ];
 
